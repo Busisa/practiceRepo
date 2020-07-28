@@ -3,12 +3,16 @@
 
 using namespace std;
 
-clock::clock()
-{
-    //ctor
-}
 
-clock::~clock()
+void clockType::printTime() const
 {
-    //dtor
+    if (hr < 10)
+        cout << "0";
+    cout << hr << ":";
+    if (min < 10)
+        cout << "0";
+    cout << min << ":";
+    if (sec < 10)
+        cout << "0";
+    cout << sec;
 }
