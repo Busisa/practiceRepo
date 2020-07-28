@@ -3,12 +3,12 @@
 
 using namespace std;
 
-clock::clock()
+void clock::incrementMinutes()
 {
-    //ctor
-}
-
-clock::~clock()
-{
-    //dtor
+    min++;
+    if (min > 59)
+    {
+        min = 0;
+        incrementHours(); //increment hours
+    }
 }
