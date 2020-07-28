@@ -3,12 +3,7 @@
 
 using namespace std;
 
-clock::clock()
+bool clock::equalTime(const clock& otherClock) const
 {
-    //ctor
-}
-
-clock::~clock()
-{
-    //dtor
+    return (hr == otherClock.hr && min == otherClock.min && sec == otherClock.sec);
 }
