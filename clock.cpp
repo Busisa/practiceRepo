@@ -3,12 +3,10 @@
 
 using namespace std;
 
-clock::clock()
+void clock::setTime(int hour, int minutes, int seconds)
 {
-    //ctor
+    hr = hour;
+    min = minutes;
+    sec = seconds;
 }
 
-clock::~clock()
-{
-    //dtor
-}
